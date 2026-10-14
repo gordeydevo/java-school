@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Введите ваш год рождения: ");
+        int birthYear = scanner.nextInt();
+
+        
+        int currentYear = 2026;
+
+       
+        int age = currentYear - birthYear;
+
+        
+        if (age >= 18) {
+            System.out.println("Вам " + age + " лет. Вы совершеннолетний.");
+        } else {
+            System.out.println("Вам " + age + " лет. Вы несовершеннолетний.");
+        }
+
+       
+        scanner.close();
+    }
+}
